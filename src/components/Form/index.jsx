@@ -15,9 +15,8 @@ const Form = (nome) => {
   return (
     <div>
       <form className={styles.form}>
-        <h1>Meu Formulário</h1>
+        <h1>Formulário de cadastro</h1>
         <div>
-          <label htmlFor="name">Nome</label>
           <input
             type="text"
             id="name"
@@ -26,9 +25,16 @@ const Form = (nome) => {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-
         <div>
-          <label htmlFor="password">Senha</label>
+          <input
+            type="email"
+            placeholder="Digite seu email"
+            id="email"
+            name="email"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <div>
           <input
             type="password"
             placeholder="Digite a sua senha"
@@ -38,16 +44,15 @@ const Form = (nome) => {
           />
         </div>
 
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            placeholder="Digite seu email"
-            id="email"
-            name="email"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
+        <fieldset>
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Digite a descrição"
+          ></textarea>
+        </fieldset>
 
         <div>
           <button onClick>Cadastrar</button>

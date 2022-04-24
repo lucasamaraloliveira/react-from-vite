@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 450px;
+  width: 450px;
+  height: 600px;
   color: #575757;
   font-size: large;
   font-weight: bold;
@@ -29,6 +29,37 @@
   border-radius: 5px;
 }
 .form input:focus {
+  outline-color: #009bdb;
+}
+
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 10px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form legend {
+  color: #ffffff;
+}
+
+.form textarea {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.form textarea:focus {
   outline-color: #009bdb;
 }
 
